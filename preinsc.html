@@ -1,0 +1,553 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="Ushuaia, Rio Grande, Tierra del Fuego, Vuelta, Enduro, Carrera, Off road, CrossWorld, Argentina, Fin del mundo" >
+<meta name="description" content="XXVI Edicion de la Vuelta a Tierra del Fuego. Rio Grande - Ushuaia - Rio Grande. La carrera del Fin del mundo. Tierra del Fuego. Argentina."/>
+<title>.:: Enduro del Fin del Mundo :: XXVI Vuelta a Tierra del Fuego ::.</title>
+</head>
+
+<body background="images/bg.jpg" topmargin="0">
+<CENTER>
+<script type="text/javascript"><!--
+google_ad_client = "pub-6389487984360740";
+/* 728x90, created 2/19/10 */
+google_ad_slot = "3130797248";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="450" height="428">
+    <tr>
+      <td height="47"><img border="0" src="images/1.jpg" width="766" height="47"></td>
+    </tr>
+    <tr>
+      <td background="images/2.jpg" height="194">
+      
+      <%
+Dim numero_azar
+' Empezamos la función Ramdomize.
+randomize
+' Buscamos el numero entre 1 y 5.
+numero_azar = Int (Rnd*5) + 1
+'Carga de imagen aleaotoria.
+  %>  
+      <img border="0" src="images/2_<%=numero_azar%>.jpg" width="766" height="194">
+      
+      
+      
+      
+      </td>
+    </tr>
+    <tr>
+      <td background="images/3.jpg" height="16">
+      <map name="FPMap0">
+      <area href="index.html" shape="rect" coords="5, 3, 130, 27">
+      <area href="mapas.html" shape="rect" coords="145, 5, 254, 29">
+      <area href="preinsc.html" shape="rect" coords="269, 3, 374, 26">
+      <area href="sponsors.html" shape="rect" coords="390, 5, 495, 27">
+      <area href="contacto.html" shape="rect" coords="509, 4, 619, 28">
+      <area href="reglamento.html" shape="rect" coords="630, 4, 757, 27">
+      </map>
+      <font size="2" face="Verdana">
+      <img border="0" src="images/menu.jpg" usemap="#FPMap0" width="766" height="39"></font></td>
+    </tr>
+    <tr>
+      <td background="images/3.jpg" height="555">
+         <!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  var radioSelected = false;
+  for (i = 0;  i < theForm.categoria.length;  i++)
+  {
+    if (theForm.categoria[i].checked)
+        radioSelected = true;
+  }
+  if (!radioSelected)
+  {
+    alert("Please select one of the \"categoria\" options.");
+    return (false);
+  }
+
+  if (theForm.nombre.value == "")
+  {
+    alert("Please enter a value for the \"nombre\" field.");
+    theForm.nombre.focus();
+    return (false);
+  }
+
+  if (theForm.nacimiento.value == "")
+  {
+    alert("Please enter a value for the \"nacimiento\" field.");
+    theForm.nacimiento.focus();
+    return (false);
+  }
+
+  if (theForm.edad.value == "")
+  {
+    alert("Please enter a value for the \"edad\" field.");
+    theForm.edad.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.edad.value;
+  var allValid = true;
+  var validGroups = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ",")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"edad\" field.");
+    theForm.edad.focus();
+    return (false);
+  }
+
+  if (decPoints > 1 || !validGroups)
+  {
+    alert("Please enter a valid number in the \"edad\" field.");
+    theForm.edad.focus();
+    return (false);
+  }
+
+  if (theForm.documento.value == "")
+  {
+    alert("Please enter a value for the \"documento\" field.");
+    theForm.documento.focus();
+    return (false);
+  }
+
+  if (theForm.domicilio.value == "")
+  {
+    alert("Please enter a value for the \"domicilio\" field.");
+    theForm.domicilio.focus();
+    return (false);
+  }
+
+  if (theForm.ciudad.value == "")
+  {
+    alert("Please enter a value for the \"ciudad\" field.");
+    theForm.ciudad.focus();
+    return (false);
+  }
+
+  if (theForm.pais.value == "")
+  {
+    alert("Please enter a value for the \"pais\" field.");
+    theForm.pais.focus();
+    return (false);
+  }
+
+  if (theForm.telefono.value == "")
+  {
+    alert("Please enter a value for the \"telefono\" field.");
+    theForm.telefono.focus();
+    return (false);
+  }
+
+  if (theForm.celular.value == "")
+  {
+    alert("Please enter a value for the \"celular\" field.");
+    theForm.celular.focus();
+    return (false);
+  }
+
+  if (theForm.email.value == "")
+  {
+    alert("Please enter a value for the \"email\" field.");
+    theForm.email.focus();
+    return (false);
+  }
+
+  var radioSelected = false;
+  for (i = 0;  i < theForm.vehiculo.length;  i++)
+  {
+    if (theForm.vehiculo[i].checked)
+        radioSelected = true;
+  }
+  if (!radioSelected)
+  {
+    alert("Please select one of the \"vehiculo\" options.");
+    return (false);
+  }
+
+  if (theForm.marca.value == "")
+  {
+    alert("Please enter a value for the \"marca\" field.");
+    theForm.marca.focus();
+    return (false);
+  }
+
+  if (theForm.modelo.value == "")
+  {
+    alert("Please enter a value for the \"modelo\" field.");
+    theForm.modelo.focus();
+    return (false);
+  }
+
+  if (theForm.anio.value == "")
+  {
+    alert("Please enter a value for the \"anio\" field.");
+    theForm.anio.focus();
+    return (false);
+  }
+
+  if (theForm.cc.value == "")
+  {
+    alert("Please enter a value for the \"cc\" field.");
+    theForm.cc.focus();
+    return (false);
+  }
+
+  if (theForm.humano.selectedIndex < 0)
+  {
+    alert("Please select one of the \"humano\" options.");
+    theForm.humano.focus();
+    return (false);
+  }
+
+  if (theForm.humano.selectedIndex == 0)
+  {
+    alert("The first \"humano\" option is not a valid selection.  Please choose one of the other options.");
+    theForm.humano.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" action="enviapreinsc.asp" onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" name="FrontPage_Form1"> 
+         <div align="center">
+        <center>
+        <table border="0" cellpadding="7" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="679" height="550">
+          <tr>
+            <td width="651" height="19" bgcolor="#FFFFFF">
+        
+         
+            <p align="center"><b><font color="#000080" face="Verdana" size="4">
+            Pre Inscripción</font></b></td>
+          </tr>
+          <tr>
+            <td width="651" height="18">
+            <p align="center"><b><font face="Verdana" color="#000080">
+            <span style="background-color: #FFFFFF">Categoría*</span></font></b></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div align="center">
+              <center>
+              <table border="0" cellpadding="3" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="599" bgcolor="#FFFFCC">
+                <tr>
+                  <td width="21"><b>
+                  <font color="#000080" size="4" face="Verdana">A</font></b></td>
+                  <td width="227"><font color="#000080" size="2" face="Verdana">
+                  <b>Moto Senior </b>(con experiencia y nivel competitivo)</font></td>
+                  <td width="21"><font color="#000080" face="Verdana">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="radio" value="A" name="categoria"></font></td>
+                  <td width="22">&nbsp;</td>
+                  <td width="20"><b>
+                  <font color="#000080" size="4" face="Verdana">F</font></b></td>
+                  <td width="261"><font color="#000080" size="2" face="Verdana">
+                  <b>Cuatri Libre</b> (libre cilindrada)</font></td>
+                  <td width="27"><font color="#000080" face="Verdana">
+                  <input type="radio" value="F" name="categoria"></font></td>
+                </tr>
+                <tr>
+                  <td width="21"><b>
+                  <font color="#000080" size="4" face="Verdana">B</font></b></td>
+                  <td width="227"><font color="#000080" size="2" face="Verdana">
+                  <b>Moto Junior </b>(sin experiencia o nivel suficiente para 
+                  Senior)</font></td>
+                  <td width="21"><font color="#000080" face="Verdana">
+                  <input type="radio" value="B" name="categoria"></font></td>
+                  <td width="22">&nbsp;</td>
+                  <td width="20"><b>
+                  <font color="#000080" size="4" face="Verdana">G</font></b></td>
+                  <td width="261"><font color="#000080" size="2" face="Verdana">
+                  <b>Cuatri Limitada </b>(4T hasta 350 cc y 2T hasta 200 cc)</font></td>
+                  <td width="27"><font color="#000080" face="Verdana">
+                  <input type="radio" value="G" name="categoria"></font></td>
+                </tr>
+                <tr>
+                  <td width="21"><b>
+                  <font color="#000080" size="4" face="Verdana">C</font></b></td>
+                  <td width="227"><font color="#000080" size="2" face="Verdana">
+                  <b>Moto Promocional </b>(con poca experiencia competitiva)</font></td>
+                  <td width="21"><font color="#000080" face="Verdana">
+                  <input type="radio" value="C" name="categoria"></font></td>
+                  <td width="22">&nbsp;</td>
+                  <td width="20"><b>
+                  <font color="#000080" size="4" face="Verdana">H</font></b></td>
+                  <td width="261"><font color="#000080" size="2" face="Verdana">
+                  <b>Cuatri Promo</b> (con poca experiencia. Sujeto a aprobación 
+                  de la Organización)</font></td>
+                  <td width="27"><font color="#000080" face="Verdana">
+                  <input type="radio" value="H" name="categoria"></font></td>
+                </tr>
+                <tr>
+                  <td width="21"><b>
+                  <font color="#000080" size="4" face="Verdana">D</font></b></td>
+                  <td width="227"><font color="#000080" size="2" face="Verdana">
+                  <b>Moto Master A </b>(entre 30 y 40 años)</font></td>
+                  <td width="21"><font color="#000080" face="Verdana">
+                  <input type="radio" value="D" name="categoria"></font></td>
+                  <td width="22">&nbsp;</td>
+                  <td width="20"><b>
+                  <font color="#000080" size="4" face="Verdana">I</font></b></td>
+                  <td width="261"><font color="#000080" size="2" face="Verdana">
+                  <b>Cuatri 4x4 </b>(sólo 4x4)</font></td>
+                  <td width="27"><font color="#000080" face="Verdana">
+                  <input type="radio" value="I" name="categoria"></font></td>
+                </tr>
+                <tr>
+                  <td width="21"><b>
+                  <font color="#000080" size="4" face="Verdana">E</font></b></td>
+                  <td width="227"><font color="#000080" size="2" face="Verdana">
+                  <b>Moto Master B</b> (mayor de 40)</font></td>
+                  <td width="21"><font color="#000080" face="Verdana">
+                  <input type="radio" value="E" name="categoria"></font></td>
+                  <td width="22">&nbsp;</td>
+                  <td width="20"><b>
+                  <font color="#000080" size="4" face="Verdana">J</font></b></td>
+                  <td width="261"><font color="#000080" size="2" face="Verdana">
+                  <b>Cuatri Damas </b>(damas, libre cilindrada)</font></td>
+                  <td width="27"><font color="#000080" face="Verdana">
+                  <input type="radio" value="J" name="categoria"></font></td>
+                </tr>
+              </table>
+              </center>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td width="651" height="20">
+            <p align="center"><b><font face="Verdana" color="#000080">
+            <span style="background-color: #FFFFFF">Datos del piloto *</span></font></b></p>
+            <div align="center">
+              <center>
+              <table border="0" cellpadding="3" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="514" bgcolor="#FFFFCC">
+                <tr>
+                  <td width="157" align="right">
+                  <font color="#000080" size="2" face="Verdana">Apellido y 
+                  Nombres</font></td>
+                  <td width="357" colspan="3">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="nombre" size="49"></td>
+                </tr>
+                <tr>
+                  <td width="157" align="right">
+                  <font color="#000080" size="2" face="Verdana">Fecha de 
+                  nacimiento:</font></td>
+                  <td width="151">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="nacimiento" size="20"></td>
+                  <td width="37" align="right">
+                  <font color="#000080" size="2" face="Verdana">Edad: </font>
+                  </td>
+                  <td width="169">
+                  <!--webbot bot="Validation" s-data-type="Number" s-number-separators="x," b-value-required="TRUE" --><input type="text" name="edad" size="5"></td>
+                </tr>
+                <tr>
+                  <td width="157" align="right">
+                  <font color="#000080" size="2" face="Verdana">Tipo y Nro. de 
+                  Docum.:</font></td>
+                  <td width="357" colspan="3">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="documento" size="32"></td>
+                </tr>
+                <tr>
+                  <td width="157" align="right">
+                  <font color="#000080" size="2" face="Verdana">Domicilio:</font></td>
+                  <td width="357" colspan="3">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="domicilio" size="50"></td>
+                </tr>
+                <tr>
+                  <td width="157" align="right">
+                  <font color="#000080" size="2" face="Verdana">
+                  Ciudad/Provincia:</font></td>
+                  <td width="151">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="ciudad" size="20"></td>
+                  <td width="37" align="right">
+                  <font color="#000080" size="2" face="Verdana">País:</font></td>
+                  <td width="169">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="pais" size="20"></td>
+                </tr>
+                <tr>
+                  <td width="157" align="right">
+                  <font color="#000080" size="2" face="Verdana">Teléfono fijo:
+                  </font></td>
+                  <td width="151">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="telefono" size="20"></td>
+                  <td width="37" align="right">
+                  <font color="#000080" size="2" face="Verdana">Cel.:</font></td>
+                  <td width="169">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="celular" size="20"></td>
+                </tr>
+                <tr>
+                  <td width="157" align="right">
+                  <font color="#000080" size="2" face="Verdana">Email</font></td>
+                  <td width="357" colspan="3">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="email" size="49"></td>
+                </tr>
+              </table>
+              </center>
+            </div>
+            </td>
+            </tr>
+          <tr>
+            <td width="651" height="31">
+            <p align="center"><b><font face="Verdana" color="#000080">
+            <span style="background-color: #FFFFFF">Datos del vehículo *</span></font></b></p>
+            <div align="center">
+              <center>
+              <table border="0" cellpadding="3" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="450" bgcolor="#FFFFCC">
+                <tr>
+                  <td width="85" align="right">
+                  <font color="#000080" size="2" face="Verdana">Moto :</font></td>
+                  <td width="155"><font color="#000080" face="Verdana">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="radio" value="Moto" name="vehiculo"></font></td>
+                  <td width="106" align="right">
+                  <font color="#000080" size="2" face="Verdana">Cuatri :</font></td>
+                  <td width="104"><font color="#000080" face="Verdana">
+                  <input type="radio" value="Cuatri" name="vehiculo"></font></td>
+                </tr>
+                <tr>
+                  <td width="85" align="right">
+                  <font color="#000080" size="2" face="Verdana">Marca:</font></td>
+                  <td width="155">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="marca" size="20"></td>
+                  <td width="106" align="right">
+                  <font color="#000080" size="2" face="Verdana">Modelo:</font></td>
+                  <td width="104">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="modelo" size="14"></td>
+                </tr>
+                <tr>
+                  <td width="85" align="right">
+                  <font color="#000080" size="2" face="Verdana">Año: </font>
+                  </td>
+                  <td width="155">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="anio" size="20"></td>
+                  <td width="106" align="right">
+                  <font color="#000080" size="2" face="Verdana">Cilindrada (cc):</font></td>
+                  <td width="104">
+                  <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="cc" size="14"></td>
+                </tr>
+              </table>
+              </center>
+            </div>
+            <p align="center"></td>
+            </tr>
+          <tr>
+            <td width="651" height="31">
+            <p align="center"><span style="background-color: #FFFFFF"><b>
+            <font face="Verdana" color="#000080">Consulta</font></b></span></p>
+            <div align="center">
+              <center>
+              <table border="0" cellpadding="3" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="450" bgcolor="#FFFFCC">
+                <tr>
+                  <td width="450" align="right">
+                  <p align="center">
+                  <textarea rows="5" name="consulta" cols="45"></textarea></td>
+                </tr>
+                </table>
+              </center>
+            </div>
+            <p align="center"><span style="background-color: #FFFFFF"><b>
+            <font face="Verdana" color="#000080">Eres humano ?</font></b></span></p>
+            <p align="center"><font face="Verdana" color="#800000" size="2">
+              <!--webbot bot="Validation" b-value-required="TRUE" b-disallow-first-item="TRUE" --><select size="1" name="humano">
+              <option selected>elije</option>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+              </select></font><font face="Verdana" color="#FFFFCC" size="2"> (<i>pregunta para evitar programas robots</i>)</font></p>
+            <p align="center"><b><font face="Verdana" color="#800000"><script type="text/javascript"><!--
+google_ad_client = "pub-6389487984360740";
+/* 200x90, created 2/19/10 */
+google_ad_slot = "5918563444";
+google_ad_width = 200;
+google_ad_height = 90;
+//-->
+            </script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script></font></b></p>
+            <p align="center"></td>
+            </tr>
+          </table>
+        </center>
+      </div>
+      <p align="center">
+      <input type="submit" value="Enviar Pre Inscripcion" name="B1"></p>
+      <p align="center">
+<a href="http://www.anrdoezrs.net/click-3774875-10576254" target="_top" onmouseover="window.status='http://www.skype.com';return true;" onmouseout="window.status=' ';return true;">
+<img src="http://www.tqlkg.com/image-3774875-10576254" width="468" height="60" alt="" border="0"/></a></p>
+      <p align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6389487984360740";
+/* 728x90, creado 16/02/09 */
+google_ad_slot = "8656157082";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></p>
+            </form>
+      </td>
+    </tr>
+    <tr>
+      <td background="images/4.jpg" height="171">
+      <p align="center">&nbsp;</p>
+      <p align="center"><a target="_blank" href="http://www.riogrande.gov.ar/">
+      <img border="0" src="images/RG3.jpg"></a></p>
+      <p align="center"><!-- Histats.com  START  -->
+<a href="http://www.histats.com/es/" target="_blank" title="contador de visitas" ><script  type="text/javascript" language="javascript">
+var s_sid = 613618;var st_dominio = 4;
+var cimg = 451;var cwi =112;var che =61;
+      </script></a>
+<script  type="text/javascript" language="javascript" src="http://s11.histats.com/js9.js"></script>
+<noscript>
+      <a href="http://www.histats.com/es/" target="_blank">
+<img  src="http://s103.histats.com/stats/0.gif?613618&1" alt="contador de visitas" border="0"></a></noscript>
+<!-- Histats.com  END  -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i><b><font color="#FFC500" face="Verdana" size="2">&nbsp;</font><font color="#800000" face="Verdana" size="2">Powered by </font></b></i>
+            <span lang="es">
+            
+            
+                  <a href="/luxmedia"><font color="#800000">
+      <a href="http://www.crossworldtv.com.ar/luxmedia">
+      <img border="0" src="images/logos/LM.jpg" width="80" height="56"></a></font></a></span></td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>
